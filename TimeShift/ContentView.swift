@@ -5,21 +5,76 @@
 //  Created by Chaher Machhour on 23/12/2023.
 //
 
-// Je vais choisir time
-// on devra utiliser .number avec format
-// Pour le temps il n'existe pas de format spécifique
-// donc on va utiliser le .number
-
 import SwiftUI
 
 struct ContentView: View {
     
     @State private var userInput = 0.0
     
-    let unities = ["seconds", "minutes", "hours", "days"]
+    let inputUnities = ["seconds", "minutes", "hours", "days"]
+    let outputUnities = ["seconds", "minutes", "hours", "days"]
     
     @State private var inputSelectedUnity = "seconds"
     @State private var outputSelectedUnity = "seconds"
+    
+    var convertedValue: Double {
+        switch inputSelectedUnity {
+        case "seconds":
+            switch outputSelectedUnity {
+            case "seconds":
+                return userInput
+            case "minutes":
+                return userInput / 60
+            case "hours":
+                return userInput / 60 / 60
+            case "days":
+                return userInput / 60 / 60 / 24
+            default:
+                return 0
+            }
+        case "minutes":
+            switch outputSelectedUnity {
+            case "seconds":
+                return userInput * 60
+            case "minutes":
+                return userInput
+            case "hours":
+                return userInput / 60
+            case "days":
+                return userInput / 60 / 24
+            default:
+                return 0
+            }
+        case "hours":
+            switch outputSelectedUnity {
+            case "seconds":
+                return userInput * 60 * 60
+            case "minutes":
+                return userInput * 60
+            case "hours":
+                return userInput
+            case "days":
+                return userInput / 24
+            default:
+                return 0
+            }
+        case "days":
+            switch outputSelectedUnity {
+            case "seconds":
+                return userInput * 24 * 60 * 60
+            case "minutes":
+                return userInput * 24 * 60
+            case "hours":
+                return userInput * 24
+            case "days":
+                return userInput
+            default:
+                return 0
+            }
+        default:
+            return 0
+        }
+    }
     
     var body: some View {
         NavigationStack {
@@ -30,7 +85,7 @@ struct ContentView: View {
                 }
                 Section("Input unit") {
                     Picker("Select an unity", selection: $inputSelectedUnity) {
-                        ForEach(unities, id: \.self) {
+                        ForEach(inputUnities, id: \.self) {
                             Text($0)
                         }
                     }
@@ -38,14 +93,14 @@ struct ContentView: View {
                 }
                 Section("Output unit") {
                     Picker("Select an unity", selection: $outputSelectedUnity) {
-                        ForEach(unities, id: \.self) {
+                        ForEach(outputUnities, id: \.self) {
                             Text($0)
                         }
                     }
                     .pickerStyle(.segmented)
                 }
                 Section("Conversion") {
-                    Text("")
+                    Text("\(convertedValue)")
                 }
             }
             .navigationTitle("TimeShift")
@@ -56,6 +111,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
-// Il ne reste plus que la partie calcul
