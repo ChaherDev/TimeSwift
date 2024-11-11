@@ -1,6 +1,6 @@
 //
-//  TimeShiftApp.swift
-//  TimeShift
+//  TimeSwiftApp.swift
+//  TimeSwift
 //
 //  Created by Chaher Machhour on 23/12/2023.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TimeShiftApp: App {
+struct TimeSwiftApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

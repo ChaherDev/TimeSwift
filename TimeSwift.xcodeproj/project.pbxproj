@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		038157772B37725800553734 /* TimeShiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038157762B37725800553734 /* TimeShiftApp.swift */; };
+		038157772B37725800553734 /* TimeSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038157762B37725800553734 /* TimeSwiftApp.swift */; };
 		038157792B37725800553734 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038157782B37725800553734 /* ContentView.swift */; };
 		0381577B2B37725A00553734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0381577A2B37725A00553734 /* Assets.xcassets */; };
 		0381577E2B37725A00553734 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0381577D2B37725A00553734 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		038157732B37725800553734 /* TimeShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		038157762B37725800553734 /* TimeShiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeShiftApp.swift; sourceTree = "<group>"; };
+		038157732B37725800553734 /* TimeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		038157762B37725800553734 /* TimeSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSwiftApp.swift; sourceTree = "<group>"; };
 		038157782B37725800553734 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0381577A2B37725A00553734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0381577D2B37725A00553734 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		0381576A2B37725800553734 = {
 			isa = PBXGroup;
 			children = (
-				038157752B37725800553734 /* TimeShift */,
+				038157752B37725800553734 /* TimeSwift */,
 				038157742B37725800553734 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +43,20 @@
 		038157742B37725800553734 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				038157732B37725800553734 /* TimeShift.app */,
+				038157732B37725800553734 /* TimeSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		038157752B37725800553734 /* TimeShift */ = {
+		038157752B37725800553734 /* TimeSwift */ = {
 			isa = PBXGroup;
 			children = (
-				038157762B37725800553734 /* TimeShiftApp.swift */,
+				038157762B37725800553734 /* TimeSwiftApp.swift */,
 				038157782B37725800553734 /* ContentView.swift */,
 				0381577A2B37725A00553734 /* Assets.xcassets */,
 				0381577C2B37725A00553734 /* Preview Content */,
 			);
-			path = TimeShift;
+			path = TimeSwift;
 			sourceTree = "<group>";
 		};
 		0381577C2B37725A00553734 /* Preview Content */ = {
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		038157722B37725800553734 /* TimeShift */ = {
+		038157722B37725800553734 /* TimeSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 038157812B37725A00553734 /* Build configuration list for PBXNativeTarget "TimeShift" */;
+			buildConfigurationList = 038157812B37725A00553734 /* Build configuration list for PBXNativeTarget "TimeSwift" */;
 			buildPhases = (
 				0381576F2B37725800553734 /* Sources */,
 				038157702B37725800553734 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = TimeShift;
+			name = TimeSwift;
 			productName = TimeShift;
-			productReference = 038157732B37725800553734 /* TimeShift.app */;
+			productReference = 038157732B37725800553734 /* TimeSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0381576E2B37725800553734 /* Build configuration list for PBXProject "TimeShift" */;
+			buildConfigurationList = 0381576E2B37725800553734 /* Build configuration list for PBXProject "TimeSwift" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				038157722B37725800553734 /* TimeShift */,
+				038157722B37725800553734 /* TimeSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038157792B37725800553734 /* ContentView.swift in Sources */,
-				038157772B37725800553734 /* TimeShiftApp.swift in Sources */,
+				038157772B37725800553734 /* TimeSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0381576E2B37725800553734 /* Build configuration list for PBXProject "TimeShift" */ = {
+		0381576E2B37725800553734 /* Build configuration list for PBXProject "TimeSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0381577F2B37725A00553734 /* Debug */,
@@ -334,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		038157812B37725A00553734 /* Build configuration list for PBXNativeTarget "TimeShift" */ = {
+		038157812B37725A00553734 /* Build configuration list for PBXNativeTarget "TimeSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				038157822B37725A00553734 /* Debug */,
